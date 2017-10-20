@@ -11,7 +11,7 @@ class List extends React.Component {
     return (
       <div >
         <ul>
-          {this.props.articles.map((item)=>{
+          {this.props.list.map((item)=>{
    
             return (
               <div key = {item.id}>
@@ -48,7 +48,7 @@ class List extends React.Component {
 }
 
 List.propTypes = {
-  articles: PT.array.isRequired
+  list: PT.array.isRequired
 };
 
 export default List;
