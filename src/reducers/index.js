@@ -1,19 +1,11 @@
-import * as types from '../actions/types';
+import {combineReducers} from 'redux';
 
-export const getInitialState = () => ({
-  test: false,
+import test from './test';
+import articles from './articles';
+
+const reducer = combineReducers({
+  test, articles
 });
 
-export default (prevState = getInitialState(), action) => {
-  switch (action.type) {
-  
-  case types.TOGGLE_TEST:
-    return Object.assign({}, prevState, {
-      test: !prevState.test
-    });
+export default reducer;
 
-  default:
-    return prevState;
-  
-  }
-};
