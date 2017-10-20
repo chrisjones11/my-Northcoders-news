@@ -22,7 +22,7 @@ export default () => {
     dispatch(fetchCommentsRequest());
     return axios.get(`${API_URL}/comments`)
       .then(res => {
-        dispatch(fetchCommentsSuccess(res.data));
+        dispatch(fetchCommentsSuccess(res.data.comments));
         // unlike articles the comments url returns an array instead of an object hence why the path is just res.data
       })
       .catch(error => {

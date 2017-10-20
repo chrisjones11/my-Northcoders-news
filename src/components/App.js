@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter, } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import List from './List';
-import allArticles from '../../data/allArticles';
+import HomePage from './HomePage';
+
 
 
 class App extends React.Component {
@@ -10,10 +10,14 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <section className='section'>
-          <Navbar />
-          <List articles= {allArticles}/>
-         
-      
+          <Navbar /> 
+          
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+           
+          </Switch>
+
+
         </section>
       </BrowserRouter>
       
