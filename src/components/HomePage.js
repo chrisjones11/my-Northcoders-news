@@ -19,7 +19,7 @@ class HomePage extends React.Component {
         <h2>HomePage</h2>
         {error && <Redirect to='/404' />}
         {loading || articles.length === 0 ? 
-          (<p>Loading...</p>) : ( <div><List list = {articles}/></div> )}
+          ( <p>Loading...</p>) : ( <div><List list = {articles}/></div> )}
       </div>
     );
   }
@@ -43,6 +43,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(fetchArticles());
   }
 });
+
+//add topics to fetchArticles to fetch them dynamicly instead
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
 

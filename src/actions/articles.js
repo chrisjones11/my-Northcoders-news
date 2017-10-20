@@ -19,6 +19,7 @@ export const fetchArticlesFailure = (error) => ({
 
 export default () => {
   return (dispatch) => {
+    // const url = topic ? `${API_URL}/topics/${topic}/articles` : `${API_URL}/articles`;
     dispatch(fetchArticlesRequest());
     return axios.get(`${API_URL}/articles`)
       .then(res => {
