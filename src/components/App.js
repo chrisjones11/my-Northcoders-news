@@ -1,14 +1,19 @@
 import React from 'react';
+import { BrowserRouter, } from 'react-router-dom';
+import Navbar from './Navbar';
+
+
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
-      <section className='section'>
-        <div id='App' className='container'>
-          <h1 className='title is-1'>NC News</h1>
-       
-        </div>
-      </section>
+      <BrowserRouter>
+        <section className='section'>
+          <Navbar />
+      
+        </section>
+      </BrowserRouter>
+      
     );
   }
 }
