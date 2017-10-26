@@ -24,6 +24,7 @@ class HomePage extends React.Component {
     );
   }
 }
+//advice on what to do with the redirect /404 if anything
 
 HomePage.propTypes = {
   articles: PT.array.isRequired,
@@ -44,7 +45,9 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-//add topics to fetchArticles to fetch them dynamicly instead
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
 
+// i want component did mount to call fetcharticles with a topic which i think will be in the url
+// so homepage should be called articles instead which renders either what cooking football or 
+// homepage is loading now
