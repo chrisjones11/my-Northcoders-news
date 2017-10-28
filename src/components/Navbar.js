@@ -9,12 +9,12 @@ class Navbar extends React.Component {
         <h1 className='title is-1'>NC News</h1>
         <button> 
           <span className="icon">
-            <Link to='/'><a><i className="fa fa-home"></i></a></Link>
+            <Link to='/'><i className="fa fa-home"></i></Link>
             
           </span>
         </button>
-        <Link to='/football'><a>Football</a>|</Link>
-        <Link to='/cooking'><a>Cooking</a>|</Link>
+        <Link to='/football'>Football|</Link>
+        <Link to='/cooking'>Cooking|</Link>
         <a>Coding</a>
       </div>
     );

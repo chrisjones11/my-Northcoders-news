@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Cooking from './Cooking';
 import Football from './Football';
 import HomePage from './HomePage';
-// import Navbar from './Navbar';
+import Navbar from './Navbar';
 import NoMatch from './NoMatch';
 
 
@@ -14,7 +14,7 @@ class App extends React.Component {
       <BrowserRouter>
         <section className='section'>
   
-
+          <Navbar />
 
           <Switch>
             <Route exact path='/' component={HomePage} />
