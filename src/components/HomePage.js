@@ -10,9 +10,12 @@ class HomePage extends React.Component {
     super(props);
   }
   componentDidMount () {
-    this.props.fetchArticles();
+    console.log(this.props.match.url);
+    this.props.fetchArticles(this.props.match.url);
+    
   }
   render () {
+    // {console.log(this.props.match.url);}
     const {articles, loading, error} = this.props;
     return (
       <div>
@@ -27,6 +30,7 @@ class HomePage extends React.Component {
 //advice on what to do with the redirect /404 if anything
 
 HomePage.propTypes = {
+  match:PT.object,
   articles: PT.array.isRequired,
   loading: PT.bool.isRequired,
   error: PT.any,
@@ -40,8 +44,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchArticles: () => {
-    dispatch(fetchArticles());
+  fetchArticles: (topic) => {
+    console.log();
+    dispatch(fetchArticles(topic));
   }
 });
 

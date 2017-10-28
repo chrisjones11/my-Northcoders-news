@@ -14,7 +14,7 @@ class List extends React.Component {
           {this.props.list.map((item)=>{
    
             return (
-              <div key = {item.id}>
+              <div key = {item._id}>
                 <nav className="level is-mobile">
                   <div className="level-left">
                     <a className="level-item">

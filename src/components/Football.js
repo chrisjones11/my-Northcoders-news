@@ -13,6 +13,7 @@ class Football extends React.Component {
     this.props.fetchFootballArticles();
   }
   render () {
+    {console.log(this.props.match.url);}
     const {footballArticles, loading, error} = this.props;
     return (
       <div>
@@ -26,6 +27,7 @@ class Football extends React.Component {
 }
 
 Football.propTypes = {
+  match:PT.object,
   footballArticles: PT.array.isRequired,
   loading: PT.bool.isRequired,
   error: PT.any,
