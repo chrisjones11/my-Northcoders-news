@@ -5,12 +5,11 @@ import {Redirect} from 'react-router-dom';
 import fetchArticles from '../actions/articles';
 import List from './List';
 
-class HomePage extends React.Component {
+class Articles extends React.Component {
   constructor (props) {
     super(props);
   }
   componentDidMount () {
-    // console.log(this.props.match.url);
     this.props.fetchArticles(this.props.match.url);
   }
   render () {
@@ -26,9 +25,9 @@ class HomePage extends React.Component {
     );
   }
 }
-//advice on what to do with the redirect /404 if anything
 
-HomePage.propTypes = {
+
+Articles.propTypes = {
   match:PT.object,
   articles: PT.array.isRequired,
   loading: PT.bool.isRequired,
@@ -50,8 +49,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
-
-// i want component did mount to call fetcharticles with a topic which i think will be in the url
-// so homepage should be called articles instead which renders either what cooking football or 
-// homepage is loading now
+export default connect(mapStateToProps, mapDispatchToProps)(Articles);

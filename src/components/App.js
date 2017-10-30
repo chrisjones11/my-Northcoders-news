@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Cooking from './Cooking';
-
-import HomePage from './HomePage';
+import Articles from './Articles';
 import Navbar from './Navbar';
 import NoMatch from './NoMatch';
 
@@ -17,9 +15,10 @@ class App extends React.Component {
           <Navbar />
 
           <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route path= '/football' component={HomePage} />
-            <Route path= '/cooking' component={Cooking} />
+            <Route exact path='/' component={Articles} />
+            <Route path= '/football' component={Articles} />
+            <Route path= '/cooking' component={Articles} />
+            <Route path= '/coding' component={Articles} />
             <Route component={NoMatch} />
           </Switch>
 
