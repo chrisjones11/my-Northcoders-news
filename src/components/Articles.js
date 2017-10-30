@@ -12,8 +12,16 @@ class Articles extends React.Component {
   componentDidMount () {
     this.props.fetchArticles(this.props.match.url);
   }
+
+  componentWillReceiveProps(nextProps){
+    if (this.props.location.pathname !== nextProps.match.url){
+      this.props.fetchArticles(nextProps.match.url);
+    }
+ 
+  }
+
   render () {
-    {console.log('render', this.props.match.url);}
+    // {console.log('render', this.props.match.url);}
     const {articles, loading, error} = this.props;
     return (
       <div>
@@ -28,6 +36,7 @@ class Articles extends React.Component {
 
 
 Articles.propTypes = {
+  location:PT.object,
   match:PT.object,
   articles: PT.array.isRequired,
   loading: PT.bool.isRequired,

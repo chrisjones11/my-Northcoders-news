@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Articles from './Articles';
 import Navbar from './Navbar';
@@ -29,4 +29,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default (App);

@@ -15,7 +15,7 @@ class Navbar extends React.Component {
         </button>
         <Link to='/football'>Football|</Link>
         <Link to='/cooking'>Cooking|</Link>
-        <a>Coding</a>
+        <Link to='/coding'>coding</Link>
       </div>
     );
   }
