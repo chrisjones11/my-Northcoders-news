@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as types from './types';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'http://northcoders-news-api.herokuapp.com/api';
 
 
 export const fetchCookingArticlesRequest = () => ({

@@ -10,12 +10,11 @@ class HomePage extends React.Component {
     super(props);
   }
   componentDidMount () {
-    console.log(this.props.match.url);
+    // console.log(this.props.match.url);
     this.props.fetchArticles(this.props.match.url);
-    
   }
   render () {
-    // {console.log(this.props.match.url);}
+    {console.log('render', this.props.match.url);}
     const {articles, loading, error} = this.props;
     return (
       <div>
@@ -44,9 +43,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchArticles: (topic) => {
+  fetchArticles: (topics) => {
     console.log();
-    dispatch(fetchArticles(topic));
+    dispatch(fetchArticles(topics));
   }
 });
 
