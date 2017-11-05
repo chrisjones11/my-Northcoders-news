@@ -6,7 +6,6 @@ import App from './components/App';
 
 import store from './store';
 
-import 'bulma/css/bulma.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(
