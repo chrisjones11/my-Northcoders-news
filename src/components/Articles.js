@@ -25,7 +25,7 @@ class Articles extends React.Component {
     const {articles, loading, error} = this.props;
     return (
       <div>
-        <h2>HomePage</h2>
+       
         {error && <Redirect to='/404' />}
         {loading || articles.length === 0 ? 
           ( <p>Loading...</p>) : ( <div><List list = {articles}/></div> )}

@@ -1,9 +1,23 @@
-#articleCards { 
-    background-color: #000204;
-    color: #b70a32;
-    
-}
 
 #bod {
     background-color: #000810;
 }
+
+
+/* nav component */
+
+#nav {
+    background-color: #000204;
+    padding: 5vh;
+}
+
+
+/* list component */
+
+#articleCards { 
+    background-color: #000204;
+    color: #b70a32;
+    margin: 3vh 16vw 3vh 12vw;
+    padding: 2vh;
+}
+
