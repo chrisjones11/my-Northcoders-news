@@ -1,17 +1,17 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Navbar extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <nav id = 'nav' className="row">
+        <nav id='nav' className="row">
           <div className="col-5">
-            <a className="logo" href="#!">Northcoders</a>
+            <Link className="logo" to="/">Northcoders</Link>
           </div>
           <div className="col">
-            <a className="home" href="#!"><i className="fa fa-home"></i></a>
+            <Link className="home" to='/'><i className="fa fa-home"></i></Link>
           </div>
           <div className="col-1">
             <Link className="topics" to='/football'>Football</Link>
