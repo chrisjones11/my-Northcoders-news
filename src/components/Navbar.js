@@ -1,23 +1,27 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 class Navbar extends React.Component {
   render() {
     return (
-      <div>
-        <nav id = 'nav' className="navbar navbar-dark bg-dark">
-          <ul className="nav nav-pills nav-fill">
-            <li className="nav-item">
-              <a className="nav-link " href="#!">Northcoders</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#!"><i className="fa fa-home"></i></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#!">Link</a>
-            </li>
-          </ul>
+      <div className="container-fluid">
+        <nav id = 'nav' className="row">
+          <div className="col-5">
+            <a className="logo" href="#!">Northcoders</a>
+          </div>
+          <div className="col">
+            <a className="home" href="#!"><i className="fa fa-home"></i></a>
+          </div>
+          <div className="col-1">
+            <Link className="topics" to='/football'>Football</Link>
+          </div>
+          <div className="col-1">
+            <Link className="topics" to='/cooking'>Cooking</Link>
+          </div>
+          <div className="col-1">
+            <Link className="topics" to='/coding'>Coding</Link>
+          </div>
         </nav>
       </div>
     );

@@ -8,7 +8,21 @@
 
 #nav {
     background-color: #000204;
-    padding: 5vh;
+    padding: 5vh 15vw;
+}
+
+.logo {
+    color: white;
+    font-size: 5vh;
+}
+
+.home {
+    color: #b70a32;
+    font-size: 5vh;
+}
+
+.topics {
+    color:white;
 }
 
 
@@ -16,8 +30,19 @@
 
 #articleCards { 
     background-color: #000204;
-    color: #b70a32;
     margin: 3vh 16vw 3vh 12vw;
     padding: 2vh;
+}
+
+.card-title {
+    color:#b70a32;
+}
+#card-text {
+    color:white;
+}
+
+#card-link {
+    margin:3px;
+    color:#b70a32;
 }
 

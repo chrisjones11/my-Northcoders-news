@@ -17,7 +17,10 @@ class List extends React.Component {
               <div key = {item._id} id = 'articleCards' className="card">
                 <div className="card-body">
                   <h4 className="card-title"> {item.title} </h4>
-                  <p className="card-text">Created by <a href="#!" className="card-link">{item.created_by}</a>in<a href="#!" className="card-link">{item.belongs_to}</a></p>
+                  <p id = "card-text" className="card-text"> Created by 
+                    <a href="#!" id = "card-link" className="card-link">{item.created_by}</a>
+                    in <a href="#!" id= "card-link" className="card-link">{item.belongs_to}</a>
+                  </p>
                 </div>
               </div>
             );
