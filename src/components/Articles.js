@@ -24,11 +24,11 @@ class Articles extends React.Component {
     // {console.log('render', this.props.match.url);}
     const {articles, loading, error} = this.props;
     return (
-      <div>
+      <div >
        
         {error && <Redirect to='/404' />}
         {loading || articles.length === 0 ? 
-          ( <p>Loading...</p>) : ( <div><List list = {articles}/></div> )}
+          ( <p>Loading...</p>) : ( <List list = {articles}/> )}
       </div>
     );
   }

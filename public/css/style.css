@@ -46,3 +46,27 @@
     color:#b70a32;
 }
 
+.fa-arrow-up {
+    color: #518151;
+}
+
+.fa-arrow-down {
+    padding-top: 6px;
+    color: #962c45;
+}
+
+.inlineicons {
+    display: inline-block;
+    max-width: 60px;
+    max-height: 60px;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+.inlineicons h6 {
+color: white;
+}
+
+.inlineicons i {
+    display: block;
+}
