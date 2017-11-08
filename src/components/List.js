@@ -28,7 +28,7 @@ class List extends React.Component {
                 </div>
               </div>
               <div className = "icons col-10">
-                <h4 className="card-title"> {item.title} </h4>
+                <Link to = {`/article/${item._id}`} ><h4 className="card-title"> {item.title} </h4></Link>
                 <p id = "card-text" className="card-text"> Created by 
                   <a href="#!" id = "card-link" className="card-link">{item.created_by}</a>
                     in <Link to={`/${item.belongs_to}`} id= "card-link" className="card-link">{item.belongs_to}</Link>
