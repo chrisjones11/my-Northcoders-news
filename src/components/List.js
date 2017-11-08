@@ -1,5 +1,6 @@
 import React from 'react';
 import PT from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 class List extends React.Component {
@@ -30,7 +31,7 @@ class List extends React.Component {
                 <h4 className="card-title"> {item.title} </h4>
                 <p id = "card-text" className="card-text"> Created by 
                   <a href="#!" id = "card-link" className="card-link">{item.created_by}</a>
-                    in <a href="#!" id= "card-link" className="card-link">{item.belongs_to}</a>
+                    in <Link to={`/${item.belongs_to}`} id= "card-link" className="card-link">{item.belongs_to}</Link>
                 </p>
               </div>
               
