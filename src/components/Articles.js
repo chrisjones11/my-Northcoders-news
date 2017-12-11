@@ -21,7 +21,7 @@ class Articles extends React.Component {
   }
 
   render () {
-    // {console.log('render', this.props.match.url);}
+    {console.log('render', this.props.match.url);}
     const {articles, loading, error} = this.props;
     return (
       <div >

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import * as types from './types';
 
+// const API_URL ='https://ncnewsbe.herokuapp.com/api';
+
 const API_URL = 'http://northcoders-news-api.herokuapp.com/api';
 
 export const fetchArticlesRequest = () => ({
