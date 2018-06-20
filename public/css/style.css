@@ -1,72 +1,17 @@
 
-#bod {
-    background-color: #000810;
-}
 
 
-/* nav component */
-
-#nav {
-    background-color: #000204;
-    padding: 5vh 15vw;
-}
-
-.logo {
-    color: white;
-    font-size: 5vh;
-}
-
-.home {
-    color: #b70a32;
-    font-size: 5vh;
-}
-
-.topics {
-    color:white;
-}
 
 
-/* list component */
 
-#articleCards { 
-    background-color: #000204;
-    margin: 3vh 16vw 3vh 12vw;
-    padding: 2vh;
-}
 
-.card-title {
-    color:#b70a32;
-}
-#card-text {
-    color:white;
-}
 
-#card-link {
-    margin:3px;
-    color:#b70a32;
-}
 
-.fa-arrow-up {
-    color: #518151;
-}
 
-.fa-arrow-down {
-    padding-top: 6px;
-    color: #962c45;
-}
 
-.inlineicons {
-    display: inline-block;
-    max-width: 60px;
-    max-height: 60px;
-    vertical-align: bottom;
-    margin-left: 5px;
-}
 
-.inlineicons h6 {
-color: white;
-}
 
-.inlineicons i {
-    display: block;
-}
+
+
+
+

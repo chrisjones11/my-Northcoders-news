@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import Articles from './Articles';
 import ArticleComments from './ArticleComments';
 // import ArticleComments from './ArticleComments';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import NoMatch from './NoMatch';
 
 
@@ -14,7 +14,7 @@ class App extends React.Component {
       <BrowserRouter>
         <section className='section'>
   
-          <Navbar />
+          
 
           <Switch>
             <Route exact path='/' component={Articles} />
